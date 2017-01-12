@@ -306,7 +306,7 @@ public class ForegroundService extends Service {
 
         private OnClickListener mForegroundListener2 = new OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(ForegroundService.ACTION_FOREGROUND);
+                Intent intent = new Intent();
                 intent.setClass(Controller.this, ForegroundService2.class);
                 startService(intent);
             }
